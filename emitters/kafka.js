@@ -19,7 +19,7 @@ function emit() {
         value: special == 7 ? specialValue : value
     }
 
-    console.log('Emitting #'+counter+': '+formData.id);
+    console.log('Emitting #'+counter+': '+formData.value);
 
     request.post({url: process.env.API_KAFKA_URL, formData: formData}, function optionalCallback(err, httpResponse, body) {
     if (err) {
