@@ -15,6 +15,9 @@
 SPECIAL_VALUE
   The value you WANT to be submitted to Kafka periodically
   
+INTERVAL
+  Delay between emitting - ms - multiplies by random number for random interval
+  
 API_KAFKA_URL
   The URL to POST to - normally https://app_name.herokuapp.com/push
   

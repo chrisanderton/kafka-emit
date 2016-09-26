@@ -28,4 +28,4 @@ function emit() {
     });
 }
 
-il.add(emit).setInterval(chance.integer({min: 1, max: 15})*100).run();
+il.add(emit).setInterval(chance.integer({min: 1, max: 15})*process.env.INTERVAL).run();
