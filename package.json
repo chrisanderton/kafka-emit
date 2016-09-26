@@ -1,0 +1,29 @@
+{
+  "name": "fox-emit",
+  "version": "1.0.0",
+  "description": "Fox Demo - Kafka Emitter",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:heroku/fox-kafka.git"
+  },
+  "author": "Chris Anderton",
+  "bugs": {
+    "url": "https://github.com/heroku/fox-kafka/issues"
+  },
+  "homepage": "https://github.com/heroku/fox-kafka",
+  "dependencies": {
+    "async": "^1.5.0",
+    "chance": "^0.8.0",
+    "dotenv": "^1.2.0",
+    "infinite-loop": "^0.2.2",
+    "node-restify-validation": "^1.0.4",
+    "request": "^2.66.0",
+    "restify": "^4.0.3",
+    "restify-redirect": "^1.0.0",
+    "no-kafka": "github:hunterloftis/kafka"
+  }
+}
