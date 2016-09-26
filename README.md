@@ -3,7 +3,7 @@
 ## web Process
 - Simple API with a '/push' endpoint
 - Accepts POST requests
-- Parameter of 'id' containing the string you want to push at the message value to Kafka
+- Parameter of 'value' containing the string you want to push at the message value to Kafka
 
 ## emit Process
 - Infinite loop with a random interval
@@ -17,6 +17,9 @@ SPECIAL_VALUE
   
 INTERVAL
   Delay between emitting - ms - multiplies by random number for random interval
+
+KAFKA_TOPIC
+  The Kafka topic to send to
   
 API_KAFKA_URL
   The URL to POST to - normally https://app_name.herokuapp.com/push

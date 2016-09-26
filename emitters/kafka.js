@@ -6,17 +6,17 @@ var request = require('request'),
     
 var il = new InfiniteLoop,
     chance = new Chance,
-    specialData = process.env.SPECIAL_VALUE,
+    specialValue = process.env.SPECIAL_VALUE,
     counter = 0;
 
 function emit() {
     counter++;
 
-    var id = 'K'+parseInt((Math.random() * 9 + 1) * Math.pow(10,9-1), 10),
+    var value = 'K'+parseInt((Math.random() * 9 + 1) * Math.pow(10,9-1), 10),
         special = chance.integer({min: 1, max: 15});
         
     var formData = {
-        id: special == 7 ? specialData : id
+        value: special == 7 ? specialValue : value
     }
 
     console.log('Emitting #'+counter+': '+formData.id);
