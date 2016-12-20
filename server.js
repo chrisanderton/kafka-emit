@@ -14,7 +14,7 @@ var message =   require('./lib/message.js'),
     kafka   =   require('./lib/kafka.js');
 
 var server = restify.createServer({
-     name: 'fox-emit',
+     name: 'kafka-emit',
      version: '1.0.0'
 });
 
